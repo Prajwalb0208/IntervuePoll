@@ -168,11 +168,6 @@ export default function StartingT() {
           View Poll history
         </button>
       </div>
-
-      <div style={{position:'fixed',left:0,right:0,bottom:22,display:'flex',justifyContent:'center'}}>
-        <button onClick={focusCreate} className="ask-new-btn">+ Ask a new question</button>
-      </div>
-
       <ChatBox role="teacher" me="Teacher" />
     </div>
   )
