@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 
 window.__CONFIG__ = window.__CONFIG__ || {};
-window.__CONFIG__.BACKEND_URL = import.meta.env?.VITE_BACKEND_URL || 'http://localhost:4000'
+window.__CONFIG__.BACKEND_URL = import.meta.env?.VITE_BACKEND_URL || 'http://localhost:4000' || 'https://intervuepoll-3igv.onrender.com'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
