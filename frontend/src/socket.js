@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client'
 
-const URL = window.__CONFIG__?.BACKEND_URL || 'http://localhost:4000'
+const URL = window.__CONFIG__?.BACKEND_URL || 'http://localhost:4000' || 'https://intervuepoll-3igv.onrender.com'
 
 let socket
 export function getSocket() {

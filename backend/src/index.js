@@ -7,10 +7,10 @@ const { nanoid } = require('nanoid');
 const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:5173';
 
 // In-memory state
-const participants = new Map(); // socketId -> { id, name, role }
+const participants = new Map(); 
 const kickedIds = new Set();
-let currentQuestion = null; // { id, text, options, correctIndex, deadlineTs, answers: Map(userId->idx), startedAt }
-const history = []; // [{ id, text, options, results: [pct], correctIndex, askedAt }]
+let currentQuestion = null; 
+const history = []; 
 
 const app = express();
 app.use(cors({ origin: FRONTEND_ORIGIN === '' ? '*' : [FRONTEND_ORIGIN, /.*/], credentials: false }));
